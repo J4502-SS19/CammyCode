@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>	Cameron R. Flatt </title>
+	<meta http-equiv="content-type"
+		content="text/html;charset=utf-8" />
+</head>
+
+<body>
+<!--This is a comment. It won't show up in your browser, only in the page source-->
+<h1> Contact Info: crfz49@mail.missouri.edu
+	<img src="img=IMG_0064" />
+<ul>Thing 1
+	Thing 2
+</ul>
+
+  <a href=“default.htm”>This is a link.</a>
+</body>
+
+</html>
