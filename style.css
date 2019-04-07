@@ -1,5 +1,5 @@
 #header {
-  background-color: blue;
+  background-color: #9BC0F6;
   width: 100%;
   margin-top: 0;
   margin-left: auto;
@@ -24,13 +24,13 @@ p {
 }
 
 body {
-  background-color: grey;
+  background-color: #E1E1E1;
 }
 
 #container {
 display: flex;
 flex-direction: row;
- background-color: white;
+ background-color: #9BC0F6;
  width: 100%;
  flex-wrap: wrap;
  justify-content: center;
@@ -69,10 +69,16 @@ a a:hover, #nav a:active {
 .caption {
   font-family: Georgia, "Times new roman", serif;
   font-style: italic;
-  color: green;
+  color: grey;
   font-size: .8em;
   margin-top: 0;
   text-align: right;
+}
+
+.type
+{
+  font-style: italic;
+  font-size: 20px;
 }
 
 .item {
@@ -95,16 +101,116 @@ a {
   color: white;
 }
 
+article {
+  margin-bottom: 1px;
+  border-bottom: 1px solid #ccc;
+}
+
+@media screen and (min-width:400px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "a b "
+    "c d";
+  }
+
+  .info {
+    width: 75%;
+    grid-area: a;
+    margin-bottom: 10px;
+  }
+
+  .section1 {
+    grid-area: b;
+  }
+
+  .image {
+    grid-area: c;
+  }
 
 
+  .type {
+    grid-area: d;
+    display: block;
+    float: bottom;
+  }
+}
+
+@media screen and (min-width:650px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "a b"
+    "c d";
+  }
+
+  .info {
+    width: 75%;
+    grid-area: a;
+  }
+
+  .section1 {
+    grid-area: b;
+  }
+
+  .image {
+    grid-area: c;
+  }
+
+
+  .type {
+    grid-area: d;
+
+  }
+}
+
+
+@media screen and (min-width:800px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 100px 300px;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a b "
+    "c d";
+  }
+
+  .info {
+    width: 100%;
+    grid-area: a;
+  }
+
+  .section1 {
+    grid-area: b;
+  }
+
+  .image {
+    grid-area: c;
+  }
+
+
+  .type {
+    grid-area: d;
+    display: block;
+  }
+
+
+}
 
 
 #footer {
 color: white;
 font-family: 'Indie Flower', helvetica, "Times new roman", cursive;
 font: 0.8em;
-border-top: 1px solid black;
-background-color: blue;
+border-top: 1px solid white;
+background-color: #9BC0F6;
 display:flex;
 justify-content: flex-end;
 }
