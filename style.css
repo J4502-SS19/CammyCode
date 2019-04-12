@@ -62,6 +62,39 @@ flex-direction: row;
   list-style: none;
 }
 
+menu {
+  background-color: #9BC0F6;
+}
+
+
+nav ul li {
+    display: block;
+    width: 100%;
+    border-top: 1.5px white solid;
+    font-family: 'Roboto Slab', helvetica, "Times new roman", serif;
+}
+
+nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-trigger {
+    order: 1;
+    font-size: 40px;
+}
+
+menu h1 {
+    order: 2;
+    font-size: 50px;
+}
+
+nav ul {
+    display: none;
+}
+
 a a:hover, #nav a:active {
   background-color: white;
 }
@@ -106,6 +139,7 @@ article {
   border-bottom: 1px solid #ccc;
 }
 
+
 @media screen and (min-width:400px) {
   article {
     display: grid;
@@ -139,6 +173,7 @@ article {
   }
 }
 
+
 @media screen and (min-width:650px) {
   article {
     display: grid;
@@ -168,7 +203,33 @@ article {
     grid-area: d;
 
   }
+  @media screen and (min-width: 850px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+        border-left: 1.5px white solid;
+        border-right: 1.5px white solid;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
 }
+}
+
 
 
 @media screen and (min-width:800px) {
